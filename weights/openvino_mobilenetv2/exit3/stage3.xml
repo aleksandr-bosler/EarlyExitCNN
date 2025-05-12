@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<net name="main_graph" version="11">
+	<layers>
+		<layer id="0" name="feat3" type="Parameter" version="opset1">
+			<data shape="1,320,7,7" element_type="f16" />
+			<output>
+				<port id="0" precision="FP16" names="feat3">
+					<dim>1</dim>
+					<dim>320</dim>
+					<dim>7</dim>
+					<dim>7</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="1" name="Range_9" type="Const" version="opset1">
+			<data element_type="i64" shape="2" offset="0" size="16" />
+			<output>
+				<port id="0" precision="I64">
+					<dim>2</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="2" name="/exit3/exit3.0/GlobalAveragePool" type="ReduceMean" version="opset1">
+			<data keep_dims="true" />
+			<input>
+				<port id="0" precision="FP16">
+					<dim>1</dim>
+					<dim>320</dim>
+					<dim>7</dim>
+					<dim>7</dim>
+				</port>
+				<port id="1" precision="I64">
+					<dim>2</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="FP16" names="/exit3/exit3.0/GlobalAveragePool_output_0">
+					<dim>1</dim>
+					<dim>320</dim>
+					<dim>1</dim>
+					<dim>1</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="3" name="Constant_34" type="Const" version="opset1">
+			<data element_type="i64" shape="2" offset="16" size="16" />
+			<output>
+				<port id="0" precision="I64">
+					<dim>2</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="4" name="/exit3/exit3.1/Flatten" type="Reshape" version="opset1">
+			<data special_zero="true" />
+			<input>
+				<port id="0" precision="FP16">
+					<dim>1</dim>
+					<dim>320</dim>
+					<dim>1</dim>
+					<dim>1</dim>
+				</port>
+				<port id="1" precision="I64">
+					<dim>2</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="FP16" names="/exit3/exit3.1/Flatten_output_0">
+					<dim>1</dim>
+					<dim>320</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="5" name="Constant_1145" type="Const" version="opset1">
+			<data element_type="f16" shape="2, 320" offset="32" size="1280" />
+			<output>
+				<port id="0" precision="FP16">
+					<dim>2</dim>
+					<dim>320</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="6" name="Multiply_44" type="MatMul" version="opset1">
+			<data transpose_a="false" transpose_b="true" />
+			<input>
+				<port id="0" precision="FP16">
+					<dim>1</dim>
+					<dim>320</dim>
+				</port>
+				<port id="1" precision="FP16">
+					<dim>2</dim>
+					<dim>320</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="FP16">
+					<dim>1</dim>
+					<dim>2</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="7" name="Constant_1208" type="Const" version="opset1">
+			<data element_type="f16" shape="1, 2" offset="1312" size="4" />
+			<output>
+				<port id="0" precision="FP16">
+					<dim>1</dim>
+					<dim>2</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="8" name="logits3" type="Add" version="opset1">
+			<data auto_broadcast="numpy" />
+			<input>
+				<port id="0" precision="FP16">
+					<dim>1</dim>
+					<dim>2</dim>
+				</port>
+				<port id="1" precision="FP16">
+					<dim>1</dim>
+					<dim>2</dim>
+				</port>
+			</input>
+			<output>
+				<port id="2" precision="FP16" names="logits3">
+					<dim>1</dim>
+					<dim>2</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="9" name="logits3/sink_port_0" type="Result" version="opset1">
+			<input>
+				<port id="0" precision="FP16">
+					<dim>1</dim>
+					<dim>2</dim>
+				</port>
+			</input>
+		</layer>
+	</layers>
+	<edges>
+		<edge from-layer="0" from-port="0" to-layer="2" to-port="0" />
+		<edge from-layer="1" from-port="0" to-layer="2" to-port="1" />
+		<edge from-layer="2" from-port="2" to-layer="4" to-port="0" />
+		<edge from-layer="3" from-port="0" to-layer="4" to-port="1" />
+		<edge from-layer="4" from-port="2" to-layer="6" to-port="0" />
+		<edge from-layer="5" from-port="0" to-layer="6" to-port="1" />
+		<edge from-layer="6" from-port="2" to-layer="8" to-port="0" />
+		<edge from-layer="7" from-port="0" to-layer="8" to-port="1" />
+		<edge from-layer="8" from-port="2" to-layer="9" to-port="0" />
+	</edges>
+	<rt_info>
+		<MO_version value="2022.3.2-9279-e2c7e4d7b4d-releases/2022/3" />
+		<Runtime_version value="2022.3.2-9279-e2c7e4d7b4d-releases/2022/3" />
+		<conversion_parameters>
+			<framework value="onnx" />
+			<input_model value="DIR\stage3.onnx" />
+			<input_shape value="[1,320,7,7]" />
+			<model_name value="stage3" />
+			<output_dir value="D:\Programming\openvino\openvino_mobilenetv2/exit3" />
+		</conversion_parameters>
+		<legacy_frontend value="False" />
+	</rt_info>
+</net>

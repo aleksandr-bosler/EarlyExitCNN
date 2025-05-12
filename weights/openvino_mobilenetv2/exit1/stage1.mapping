@@ -1,0 +1,535 @@
+<?xml version="1.0"?>
+<mapping>
+	<map>
+		<framework name="input" output_port_id="input" />
+		<IR name="input" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_527" output_port_id="onnx::Conv_527" />
+		<IR name="onnx::Conv_527" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/conv_stem/Conv" output_port_id="/backbone/conv_stem/Conv_output_0" />
+		<IR name="/backbone/conv_stem/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/bn1/act/Clip" output_port_id="/backbone/bn1/act/Clip_output_0" />
+		<IR name="/backbone/bn1/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.0/blocks.0.0/conv_dw/Conv" output_port_id="/backbone/blocks.0/blocks.0.0/conv_dw/Conv_output_0" />
+		<IR name="/backbone/blocks.0/blocks.0.0/conv_dw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.0/blocks.0.0/bn1/act/Clip" output_port_id="/backbone/blocks.0/blocks.0.0/bn1/act/Clip_output_0" />
+		<IR name="/backbone/blocks.0/blocks.0.0/bn1/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_533" output_port_id="onnx::Conv_533" />
+		<IR name="onnx::Conv_533" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.0/blocks.0.0/conv_pw/Conv" output_port_id="/backbone/blocks.0/blocks.0.0/conv_pw/Conv_output_0" />
+		<IR name="/backbone/blocks.0/blocks.0.0/conv_pw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_536" output_port_id="onnx::Conv_536" />
+		<IR name="onnx::Conv_536" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.1/blocks.1.0/conv_pw/Conv" output_port_id="/backbone/blocks.1/blocks.1.0/conv_pw/Conv_output_0" />
+		<IR name="/backbone/blocks.1/blocks.1.0/conv_pw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.1/blocks.1.0/bn1/act/Clip" output_port_id="/backbone/blocks.1/blocks.1.0/bn1/act/Clip_output_0" />
+		<IR name="/backbone/blocks.1/blocks.1.0/bn1/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.1/blocks.1.0/conv_dw/Conv" output_port_id="/backbone/blocks.1/blocks.1.0/conv_dw/Conv_output_0" />
+		<IR name="/backbone/blocks.1/blocks.1.0/conv_dw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.1/blocks.1.0/bn2/act/Clip" output_port_id="/backbone/blocks.1/blocks.1.0/bn2/act/Clip_output_0" />
+		<IR name="/backbone/blocks.1/blocks.1.0/bn2/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_542" output_port_id="onnx::Conv_542" />
+		<IR name="onnx::Conv_542" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.1/blocks.1.0/conv_pwl/Conv" output_port_id="/backbone/blocks.1/blocks.1.0/conv_pwl/Conv_output_0" />
+		<IR name="/backbone/blocks.1/blocks.1.0/conv_pwl/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_545" output_port_id="onnx::Conv_545" />
+		<IR name="onnx::Conv_545" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.1/blocks.1.1/conv_pw/Conv" output_port_id="/backbone/blocks.1/blocks.1.1/conv_pw/Conv_output_0" />
+		<IR name="/backbone/blocks.1/blocks.1.1/conv_pw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.1/blocks.1.1/bn1/act/Clip" output_port_id="/backbone/blocks.1/blocks.1.1/bn1/act/Clip_output_0" />
+		<IR name="/backbone/blocks.1/blocks.1.1/bn1/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.1/blocks.1.1/conv_dw/Conv" output_port_id="/backbone/blocks.1/blocks.1.1/conv_dw/Conv_output_0" />
+		<IR name="/backbone/blocks.1/blocks.1.1/conv_dw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.1/blocks.1.1/bn2/act/Clip" output_port_id="/backbone/blocks.1/blocks.1.1/bn2/act/Clip_output_0" />
+		<IR name="/backbone/blocks.1/blocks.1.1/bn2/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_551" output_port_id="onnx::Conv_551" />
+		<IR name="onnx::Conv_551" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.1/blocks.1.1/conv_pwl/Conv" output_port_id="/backbone/blocks.1/blocks.1.1/conv_pwl/Conv_output_0" />
+		<IR name="/backbone/blocks.1/blocks.1.1/conv_pwl/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.1/blocks.1.1/Add" output_port_id="/backbone/blocks.1/blocks.1.1/Add_output_0" />
+		<IR name="/backbone/blocks.1/blocks.1.1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_554" output_port_id="onnx::Conv_554" />
+		<IR name="onnx::Conv_554" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.2/blocks.2.0/conv_pw/Conv" output_port_id="/backbone/blocks.2/blocks.2.0/conv_pw/Conv_output_0" />
+		<IR name="/backbone/blocks.2/blocks.2.0/conv_pw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.2/blocks.2.0/bn1/act/Clip" output_port_id="/backbone/blocks.2/blocks.2.0/bn1/act/Clip_output_0" />
+		<IR name="/backbone/blocks.2/blocks.2.0/bn1/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.2/blocks.2.0/conv_dw/Conv" output_port_id="/backbone/blocks.2/blocks.2.0/conv_dw/Conv_output_0" />
+		<IR name="/backbone/blocks.2/blocks.2.0/conv_dw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.2/blocks.2.0/bn2/act/Clip" output_port_id="/backbone/blocks.2/blocks.2.0/bn2/act/Clip_output_0" />
+		<IR name="/backbone/blocks.2/blocks.2.0/bn2/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_560" output_port_id="onnx::Conv_560" />
+		<IR name="onnx::Conv_560" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.2/blocks.2.0/conv_pwl/Conv" output_port_id="/backbone/blocks.2/blocks.2.0/conv_pwl/Conv_output_0" />
+		<IR name="/backbone/blocks.2/blocks.2.0/conv_pwl/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_563" output_port_id="onnx::Conv_563" />
+		<IR name="onnx::Conv_563" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.2/blocks.2.1/conv_pw/Conv" output_port_id="/backbone/blocks.2/blocks.2.1/conv_pw/Conv_output_0" />
+		<IR name="/backbone/blocks.2/blocks.2.1/conv_pw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.2/blocks.2.1/bn1/act/Clip" output_port_id="/backbone/blocks.2/blocks.2.1/bn1/act/Clip_output_0" />
+		<IR name="/backbone/blocks.2/blocks.2.1/bn1/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.2/blocks.2.1/conv_dw/Conv" output_port_id="/backbone/blocks.2/blocks.2.1/conv_dw/Conv_output_0" />
+		<IR name="/backbone/blocks.2/blocks.2.1/conv_dw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.2/blocks.2.1/bn2/act/Clip" output_port_id="/backbone/blocks.2/blocks.2.1/bn2/act/Clip_output_0" />
+		<IR name="/backbone/blocks.2/blocks.2.1/bn2/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_569" output_port_id="onnx::Conv_569" />
+		<IR name="onnx::Conv_569" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.2/blocks.2.1/conv_pwl/Conv" output_port_id="/backbone/blocks.2/blocks.2.1/conv_pwl/Conv_output_0" />
+		<IR name="/backbone/blocks.2/blocks.2.1/conv_pwl/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.2/blocks.2.1/Add" output_port_id="/backbone/blocks.2/blocks.2.1/Add_output_0" />
+		<IR name="/backbone/blocks.2/blocks.2.1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_572" output_port_id="onnx::Conv_572" />
+		<IR name="onnx::Conv_572" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.2/blocks.2.2/conv_pw/Conv" output_port_id="/backbone/blocks.2/blocks.2.2/conv_pw/Conv_output_0" />
+		<IR name="/backbone/blocks.2/blocks.2.2/conv_pw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.2/blocks.2.2/bn1/act/Clip" output_port_id="/backbone/blocks.2/blocks.2.2/bn1/act/Clip_output_0" />
+		<IR name="/backbone/blocks.2/blocks.2.2/bn1/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.2/blocks.2.2/conv_dw/Conv" output_port_id="/backbone/blocks.2/blocks.2.2/conv_dw/Conv_output_0" />
+		<IR name="/backbone/blocks.2/blocks.2.2/conv_dw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.2/blocks.2.2/bn2/act/Clip" output_port_id="/backbone/blocks.2/blocks.2.2/bn2/act/Clip_output_0" />
+		<IR name="/backbone/blocks.2/blocks.2.2/bn2/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_578" output_port_id="onnx::Conv_578" />
+		<IR name="onnx::Conv_578" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.2/blocks.2.2/conv_pwl/Conv" output_port_id="/backbone/blocks.2/blocks.2.2/conv_pwl/Conv_output_0" />
+		<IR name="/backbone/blocks.2/blocks.2.2/conv_pwl/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.2/blocks.2.2/Add" output_port_id="/backbone/blocks.2/blocks.2.2/Add_output_0" />
+		<IR name="/backbone/blocks.2/blocks.2.2/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_581" output_port_id="onnx::Conv_581" />
+		<IR name="onnx::Conv_581" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.0/conv_pw/Conv" output_port_id="/backbone/blocks.3/blocks.3.0/conv_pw/Conv_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.0/conv_pw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.0/bn1/act/Clip" output_port_id="/backbone/blocks.3/blocks.3.0/bn1/act/Clip_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.0/bn1/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.0/conv_dw/Conv" output_port_id="/backbone/blocks.3/blocks.3.0/conv_dw/Conv_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.0/conv_dw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.0/bn2/act/Clip" output_port_id="/backbone/blocks.3/blocks.3.0/bn2/act/Clip_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.0/bn2/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_587" output_port_id="onnx::Conv_587" />
+		<IR name="onnx::Conv_587" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.0/conv_pwl/Conv" output_port_id="/backbone/blocks.3/blocks.3.0/conv_pwl/Conv_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.0/conv_pwl/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_590" output_port_id="onnx::Conv_590" />
+		<IR name="onnx::Conv_590" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.1/conv_pw/Conv" output_port_id="/backbone/blocks.3/blocks.3.1/conv_pw/Conv_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.1/conv_pw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.1/bn1/act/Clip" output_port_id="/backbone/blocks.3/blocks.3.1/bn1/act/Clip_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.1/bn1/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.1/conv_dw/Conv" output_port_id="/backbone/blocks.3/blocks.3.1/conv_dw/Conv_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.1/conv_dw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.1/bn2/act/Clip" output_port_id="/backbone/blocks.3/blocks.3.1/bn2/act/Clip_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.1/bn2/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_596" output_port_id="onnx::Conv_596" />
+		<IR name="onnx::Conv_596" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.1/conv_pwl/Conv" output_port_id="/backbone/blocks.3/blocks.3.1/conv_pwl/Conv_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.1/conv_pwl/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.1/Add" output_port_id="/backbone/blocks.3/blocks.3.1/Add_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_599" output_port_id="onnx::Conv_599" />
+		<IR name="onnx::Conv_599" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.2/conv_pw/Conv" output_port_id="/backbone/blocks.3/blocks.3.2/conv_pw/Conv_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.2/conv_pw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.2/bn1/act/Clip" output_port_id="/backbone/blocks.3/blocks.3.2/bn1/act/Clip_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.2/bn1/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.2/conv_dw/Conv" output_port_id="/backbone/blocks.3/blocks.3.2/conv_dw/Conv_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.2/conv_dw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.2/bn2/act/Clip" output_port_id="/backbone/blocks.3/blocks.3.2/bn2/act/Clip_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.2/bn2/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_605" output_port_id="onnx::Conv_605" />
+		<IR name="onnx::Conv_605" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.2/conv_pwl/Conv" output_port_id="/backbone/blocks.3/blocks.3.2/conv_pwl/Conv_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.2/conv_pwl/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.2/Add" output_port_id="/backbone/blocks.3/blocks.3.2/Add_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.2/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_608" output_port_id="onnx::Conv_608" />
+		<IR name="onnx::Conv_608" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.3/conv_pw/Conv" output_port_id="/backbone/blocks.3/blocks.3.3/conv_pw/Conv_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.3/conv_pw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.3/bn1/act/Clip" output_port_id="/backbone/blocks.3/blocks.3.3/bn1/act/Clip_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.3/bn1/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.3/conv_dw/Conv" output_port_id="/backbone/blocks.3/blocks.3.3/conv_dw/Conv_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.3/conv_dw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.3/bn2/act/Clip" output_port_id="/backbone/blocks.3/blocks.3.3/bn2/act/Clip_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.3/bn2/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_614" output_port_id="onnx::Conv_614" />
+		<IR name="onnx::Conv_614" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.3/conv_pwl/Conv" output_port_id="/backbone/blocks.3/blocks.3.3/conv_pwl/Conv_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.3/conv_pwl/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.3/blocks.3.3/Add" output_port_id="/backbone/blocks.3/blocks.3.3/Add_output_0" />
+		<IR name="/backbone/blocks.3/blocks.3.3/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_617" output_port_id="onnx::Conv_617" />
+		<IR name="onnx::Conv_617" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.4/blocks.4.0/conv_pw/Conv" output_port_id="/backbone/blocks.4/blocks.4.0/conv_pw/Conv_output_0" />
+		<IR name="/backbone/blocks.4/blocks.4.0/conv_pw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.4/blocks.4.0/bn1/act/Clip" output_port_id="/backbone/blocks.4/blocks.4.0/bn1/act/Clip_output_0" />
+		<IR name="/backbone/blocks.4/blocks.4.0/bn1/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.4/blocks.4.0/conv_dw/Conv" output_port_id="/backbone/blocks.4/blocks.4.0/conv_dw/Conv_output_0" />
+		<IR name="/backbone/blocks.4/blocks.4.0/conv_dw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.4/blocks.4.0/bn2/act/Clip" output_port_id="/backbone/blocks.4/blocks.4.0/bn2/act/Clip_output_0" />
+		<IR name="/backbone/blocks.4/blocks.4.0/bn2/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_623" output_port_id="onnx::Conv_623" />
+		<IR name="onnx::Conv_623" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.4/blocks.4.0/conv_pwl/Conv" output_port_id="/backbone/blocks.4/blocks.4.0/conv_pwl/Conv_output_0" />
+		<IR name="/backbone/blocks.4/blocks.4.0/conv_pwl/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_626" output_port_id="onnx::Conv_626" />
+		<IR name="onnx::Conv_626" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.4/blocks.4.1/conv_pw/Conv" output_port_id="/backbone/blocks.4/blocks.4.1/conv_pw/Conv_output_0" />
+		<IR name="/backbone/blocks.4/blocks.4.1/conv_pw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.4/blocks.4.1/bn1/act/Clip" output_port_id="/backbone/blocks.4/blocks.4.1/bn1/act/Clip_output_0" />
+		<IR name="/backbone/blocks.4/blocks.4.1/bn1/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.4/blocks.4.1/conv_dw/Conv" output_port_id="/backbone/blocks.4/blocks.4.1/conv_dw/Conv_output_0" />
+		<IR name="/backbone/blocks.4/blocks.4.1/conv_dw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.4/blocks.4.1/bn2/act/Clip" output_port_id="/backbone/blocks.4/blocks.4.1/bn2/act/Clip_output_0" />
+		<IR name="/backbone/blocks.4/blocks.4.1/bn2/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_632" output_port_id="onnx::Conv_632" />
+		<IR name="onnx::Conv_632" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.4/blocks.4.1/conv_pwl/Conv" output_port_id="/backbone/blocks.4/blocks.4.1/conv_pwl/Conv_output_0" />
+		<IR name="/backbone/blocks.4/blocks.4.1/conv_pwl/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.4/blocks.4.1/Add" output_port_id="/backbone/blocks.4/blocks.4.1/Add_output_0" />
+		<IR name="/backbone/blocks.4/blocks.4.1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_635" output_port_id="onnx::Conv_635" />
+		<IR name="onnx::Conv_635" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.4/blocks.4.2/conv_pw/Conv" output_port_id="/backbone/blocks.4/blocks.4.2/conv_pw/Conv_output_0" />
+		<IR name="/backbone/blocks.4/blocks.4.2/conv_pw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.4/blocks.4.2/bn1/act/Clip" output_port_id="/backbone/blocks.4/blocks.4.2/bn1/act/Clip_output_0" />
+		<IR name="/backbone/blocks.4/blocks.4.2/bn1/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.4/blocks.4.2/conv_dw/Conv" output_port_id="/backbone/blocks.4/blocks.4.2/conv_dw/Conv_output_0" />
+		<IR name="/backbone/blocks.4/blocks.4.2/conv_dw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.4/blocks.4.2/bn2/act/Clip" output_port_id="/backbone/blocks.4/blocks.4.2/bn2/act/Clip_output_0" />
+		<IR name="/backbone/blocks.4/blocks.4.2/bn2/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_641" output_port_id="onnx::Conv_641" />
+		<IR name="onnx::Conv_641" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.4/blocks.4.2/conv_pwl/Conv" output_port_id="/backbone/blocks.4/blocks.4.2/conv_pwl/Conv_output_0" />
+		<IR name="/backbone/blocks.4/blocks.4.2/conv_pwl/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="feat2" output_port_id="feat2" />
+		<IR name="feat2" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_644" output_port_id="onnx::Conv_644" />
+		<IR name="onnx::Conv_644" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.5/blocks.5.0/conv_pw/Conv" output_port_id="/backbone/blocks.5/blocks.5.0/conv_pw/Conv_output_0" />
+		<IR name="/backbone/blocks.5/blocks.5.0/conv_pw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.5/blocks.5.0/bn1/act/Clip" output_port_id="/backbone/blocks.5/blocks.5.0/bn1/act/Clip_output_0" />
+		<IR name="/backbone/blocks.5/blocks.5.0/bn1/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.5/blocks.5.0/conv_dw/Conv" output_port_id="/backbone/blocks.5/blocks.5.0/conv_dw/Conv_output_0" />
+		<IR name="/backbone/blocks.5/blocks.5.0/conv_dw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.5/blocks.5.0/bn2/act/Clip" output_port_id="/backbone/blocks.5/blocks.5.0/bn2/act/Clip_output_0" />
+		<IR name="/backbone/blocks.5/blocks.5.0/bn2/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_650" output_port_id="onnx::Conv_650" />
+		<IR name="onnx::Conv_650" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.5/blocks.5.0/conv_pwl/Conv" output_port_id="/backbone/blocks.5/blocks.5.0/conv_pwl/Conv_output_0" />
+		<IR name="/backbone/blocks.5/blocks.5.0/conv_pwl/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_653" output_port_id="onnx::Conv_653" />
+		<IR name="onnx::Conv_653" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.5/blocks.5.1/conv_pw/Conv" output_port_id="/backbone/blocks.5/blocks.5.1/conv_pw/Conv_output_0" />
+		<IR name="/backbone/blocks.5/blocks.5.1/conv_pw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.5/blocks.5.1/bn1/act/Clip" output_port_id="/backbone/blocks.5/blocks.5.1/bn1/act/Clip_output_0" />
+		<IR name="/backbone/blocks.5/blocks.5.1/bn1/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.5/blocks.5.1/conv_dw/Conv" output_port_id="/backbone/blocks.5/blocks.5.1/conv_dw/Conv_output_0" />
+		<IR name="/backbone/blocks.5/blocks.5.1/conv_dw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.5/blocks.5.1/bn2/act/Clip" output_port_id="/backbone/blocks.5/blocks.5.1/bn2/act/Clip_output_0" />
+		<IR name="/backbone/blocks.5/blocks.5.1/bn2/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_659" output_port_id="onnx::Conv_659" />
+		<IR name="onnx::Conv_659" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.5/blocks.5.1/conv_pwl/Conv" output_port_id="/backbone/blocks.5/blocks.5.1/conv_pwl/Conv_output_0" />
+		<IR name="/backbone/blocks.5/blocks.5.1/conv_pwl/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.5/blocks.5.1/Add" output_port_id="/backbone/blocks.5/blocks.5.1/Add_output_0" />
+		<IR name="/backbone/blocks.5/blocks.5.1/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_662" output_port_id="onnx::Conv_662" />
+		<IR name="onnx::Conv_662" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.5/blocks.5.2/conv_pw/Conv" output_port_id="/backbone/blocks.5/blocks.5.2/conv_pw/Conv_output_0" />
+		<IR name="/backbone/blocks.5/blocks.5.2/conv_pw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.5/blocks.5.2/bn1/act/Clip" output_port_id="/backbone/blocks.5/blocks.5.2/bn1/act/Clip_output_0" />
+		<IR name="/backbone/blocks.5/blocks.5.2/bn1/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.5/blocks.5.2/conv_dw/Conv" output_port_id="/backbone/blocks.5/blocks.5.2/conv_dw/Conv_output_0" />
+		<IR name="/backbone/blocks.5/blocks.5.2/conv_dw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.5/blocks.5.2/bn2/act/Clip" output_port_id="/backbone/blocks.5/blocks.5.2/bn2/act/Clip_output_0" />
+		<IR name="/backbone/blocks.5/blocks.5.2/bn2/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_668" output_port_id="onnx::Conv_668" />
+		<IR name="onnx::Conv_668" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.5/blocks.5.2/conv_pwl/Conv" output_port_id="/backbone/blocks.5/blocks.5.2/conv_pwl/Conv_output_0" />
+		<IR name="/backbone/blocks.5/blocks.5.2/conv_pwl/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.5/blocks.5.2/Add" output_port_id="/backbone/blocks.5/blocks.5.2/Add_output_0" />
+		<IR name="/backbone/blocks.5/blocks.5.2/Add" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_671" output_port_id="onnx::Conv_671" />
+		<IR name="onnx::Conv_671" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.6/blocks.6.0/conv_pw/Conv" output_port_id="/backbone/blocks.6/blocks.6.0/conv_pw/Conv_output_0" />
+		<IR name="/backbone/blocks.6/blocks.6.0/conv_pw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.6/blocks.6.0/bn1/act/Clip" output_port_id="/backbone/blocks.6/blocks.6.0/bn1/act/Clip_output_0" />
+		<IR name="/backbone/blocks.6/blocks.6.0/bn1/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.6/blocks.6.0/conv_dw/Conv" output_port_id="/backbone/blocks.6/blocks.6.0/conv_dw/Conv_output_0" />
+		<IR name="/backbone/blocks.6/blocks.6.0/conv_dw/Conv" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/backbone/blocks.6/blocks.6.0/bn2/act/Clip" output_port_id="/backbone/blocks.6/blocks.6.0/bn2/act/Clip_output_0" />
+		<IR name="/backbone/blocks.6/blocks.6.0/bn2/act/Clip" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_677" output_port_id="onnx::Conv_677" />
+		<IR name="onnx::Conv_677" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="feat3" output_port_id="feat3" />
+		<IR name="feat3" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/exit1/exit1.0/GlobalAveragePool" output_port_id="/exit1/exit1.0/GlobalAveragePool_output_0" />
+		<IR name="/exit1/exit1.0/GlobalAveragePool" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="/exit1/exit1.1/Flatten" output_port_id="/exit1/exit1.1/Flatten_output_0" />
+		<IR name="/exit1/exit1.1/Flatten" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="logits1" output_port_id="logits1" />
+		<IR name="logits1" output_port_id="2" />
+	</map>
+</mapping>
